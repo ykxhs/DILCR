@@ -1,4 +1,5 @@
 我们提供了aml的文件
-
+exp文件过大 请从http://acgt.cs.tau.ac.il/multi_omic_benchmark/download.html下载
 
 We have provided aml files
+exp file is too large. Please remove it from the http://acgt.cs.tau.ac.il/multi_omic_benchmark/download.html download
