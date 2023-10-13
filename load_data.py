@@ -11,7 +11,9 @@ def load_data(path):
     mirna = pd.read_csv(os.path.join(path, "mirna"), sep = " ")
     survival = pd.read_csv(os.path.join(path, "survival"), sep = "\t")
     survival = survival.dropna(axis=0)
-    survival = survival.drop_duplicates() # BRCA 不建议使用
+    survival = survival.drop_duplicates() # Please comment on this code for the brca dataset.
+    if path.lower() == "ov":  # Unlike other datasets, the names of DNA methylation patients in the ov dataset are '-'.
+        methy.columns = [re.sub("-", ".", x) for x in methy.columns.str.upper()]
     if len(survival["PatientID"][survival.index[0]]) > len('tcga.16.1060'):
         name_list = list()
         survival["PatientID"] = [re.sub("-", ".", x) for x in survival["PatientID"].str.upper()]
