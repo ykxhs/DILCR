@@ -1,8 +1,0 @@
-这个文件夹为一些其他数据文件。
-xxxx_label_and_clinical.csv: 为我们模型所识别的患者的亚型标签和对应的癌症参数
-gene_list_all.csv: 在KIRC数据集上识别的所有差异基因
-
-
-This folder contains some other data files.
-xxxx_label_and_clinical.csv: The subtype labels and corresponding cancer parameters of the patients identified by our model.
-gene_list_all.csv: All differential genes identified on the KIRC dataset
