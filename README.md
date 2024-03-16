@@ -14,3 +14,17 @@ Soon we will provide a Pytorch version of DILCR so that everyone can reproduce i
 
 ## Feedback
 If you have any questions, you can contact us through the email address in the article or submit a question.
+
+## Reference
+‘’‘ c
+@article{cai2024deeply,
+  title={Deeply integrating latent consistent representations in high-noise multi-omics data for cancer subtyping},
+  author={Cai, Yueyi and Wang, Shunfang},
+  journal={Briefings in Bioinformatics},
+  volume={25},
+  number={2},
+  pages={bbae061},
+  year={2024},
+  publisher={Oxford University Press}
+}
+’‘’
