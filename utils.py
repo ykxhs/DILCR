@@ -2,7 +2,7 @@ import difflib
 import math
 import os
 import re
-import paddle
+import torch
 
 import numpy as np
 import pandas as pd
@@ -16,7 +16,7 @@ from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score, p
 
 
 def p_normalize(x, p=2):
-    return x / (paddle.norm(x, p=p, axis=1, keepdim=True) + 1e-6)
+    return x / (torch.norm(x, p=p, dim=1, keepdim=True) + 1e-6)
 
 def lifeline_analysis(df, title_g="brca"):
     '''
